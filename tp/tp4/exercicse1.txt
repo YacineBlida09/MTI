@@ -1,0 +1,56 @@
+1)
+StudentA	Model	Stores and manages the data 
+StudentB	View	Handles all user interactions — displaying data and prompting input
+StudentC	Controller	Acts as a bridge between the Model and the View. Gets data from the Model, sends it to the View, and takes user input from the View to send to the Model.
+
+2)
+--Model (StudentA)
+
+Responsibilities:
+
+Maintain and manage the data (list of students).
+
+Handle business logic, such as searching for a student.
+
+Methods:
+
+get_students() → Returns the list of students.
+
+search_student(name) → Checks if a given name exists and returns a message.
+
+Does not interact directly with the user.
+
+--View (StudentB)
+
+Responsibilities:
+
+Display data and messages to the user.
+
+Collect user input (like the name to search).
+
+Methods:
+
+display_students(students) → Prints all students.
+
+display_message(message) → Prints a result message.
+
+display_search_prompt() → Prompts the user for a name.
+
+No logic or data manipulation. It only shows information and gets input.
+
+--Controller (StudentC)
+
+Responsibilities:
+
+Acts as the intermediary between Model and View.
+
+Requests data from the Model, passes it to the View.
+
+Takes user input from the View and uses it to query the Model.
+
+Methods:
+
+display_students() → Gets list from Model → Sends it to View to display.
+
+search_student() → Asks View for input → Sends it to Model → Shows result via View.
+

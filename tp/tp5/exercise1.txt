@@ -1,0 +1,19 @@
+Given this code :
+class UserManager:
+        def __init__(self):
+            self.users = []
+        def add_user(self, user):
+            self.users.append(user)
+        def save_to_database(self, user):
+            # Database logic
+            pass
+        def send_welcome_email(self, user):
+            # Email logic
+            pass
+        def generate_report(self):
+            # Reporting logic
+            Pass
+1.​ identify the violations and list the distinct responsibilities.
+2.​ refactor into separate classes .​
+
+single responsibility principle: la classe UserManager gere toutes les operations de l utilisateur

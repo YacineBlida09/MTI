@@ -1,0 +1,22 @@
+Given this code :
+class PaymentProcessor:
+    def process_payment(self, amount, method):
+        if method == "credit_card":
+            # Process credit card
+            pass
+    elif method == "paypal":
+        # Process PayPal
+        pass
+    elif method == "bitcoin":
+        # Process Bitcoin
+        Pass
+1.​ What happens when adding new payment methods?
+2.​ implement an abstract base class and concrete payment strategies using inheritance and
+polymorphism.
+
+1. changement dans la fonction:
+    elif method == "new method"
+        #process new method
+        pass
+
+2.

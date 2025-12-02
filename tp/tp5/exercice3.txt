@@ -1,0 +1,18 @@
+Given this code :
+class Rectangle:
+    def set_width(self, width):
+        self._width = width
+    def set_height(self, height):
+        self._height = height
+class Square(Rectangle):
+    def set_width(self, width):
+        self._width = width
+        self._height = width # Violation!
+    def set_height(self, height):
+        self._width = height
+        self._height = height
+
+1.​ Write tests demonstrating the violation and explain why it breaks LSP.
+2.​ Redesign using composition or proper abstraction with Shape interface.
+3.​ Fix a bird hierarchy where Penguin inherits from Bird but cannot fly().​
+

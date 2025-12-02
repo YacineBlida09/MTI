@@ -1,0 +1,15 @@
+Given this code :
+class Worker(ABC):
+    @abstractmethod
+    def work(self): pass
+    @abstractmethod
+    def eat(self): pass
+    @abstractmethod
+    def sleep(self): pass
+    @abstractmethod
+    def get_salary(self): pass
+class Robot(Worker):
+    Pass
+    # Problem: Robots don't eat or sleep!
+1.​ Analyze a bloated interface
+2.​ Students split into cohesive interfaces: Workable, Eatable, Sleepable, Payable.
