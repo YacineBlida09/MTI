@@ -1,0 +1,4 @@
+Class Diagram Design:
+1. Product Interface: Report (Abstract)
+2. Concrete Products: PDFReport , ExcelReport , WordReport (Implement Report)
+3. Creator: ReportFactory (Contains the create_report method)

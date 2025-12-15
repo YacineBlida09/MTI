@@ -1,3 +1,4 @@
+# File: python/tp/tp5/exercice1.py
 class UserManager:
     def __init__(self):
         self.users = []

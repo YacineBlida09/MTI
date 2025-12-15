@@ -1,0 +1,2 @@
+1. Explain in your own words the concept and use case of the Singleton Design Pattern.
+ The Singleton pattern guarantees a class has only one instance with an access point if an instance request is recieved and an instance already exists we return it else we create one. it is used for shared resources like printers and database connections
